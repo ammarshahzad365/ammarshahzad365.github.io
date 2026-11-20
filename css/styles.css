@@ -278,6 +278,18 @@ section[id], footer[id] { scroll-margin-top: 88px; }
 .btn-outline-footer { border: 2px solid var(--footer-text); color: var(--footer-text); padding-inline: 24px; }
 .btn-outline-footer:hover { color: var(--accent-soft); border-color: var(--accent-soft); }
 
+/* Split pill: "View CV | Download" share one rounded button */
+.btn-split { display: inline-flex; border-radius: 999px; overflow: hidden; }
+.btn-split .btn { border-radius: 0; padding-inline: 22px; }
+.btn-split .btn:hover { transform: none; }
+.btn-split .btn + .btn { border-left: 2px solid var(--split-rule); }
+.btn-split-outline { --split-rule: var(--rule-strong); border: 2px solid var(--rule-strong); }
+.btn-split-outline .btn { min-height: 48px; }
+.btn-split-outline .btn:hover { background: var(--accent-soft); color: var(--navy); }
+.btn-split-soft { --split-rule: rgba(15, 27, 45, 0.25); background: var(--accent-soft); }
+.btn-split-soft .btn { color: var(--navy); }
+.btn-split-soft .btn:hover { color: var(--navy); background: rgba(255, 255, 255, 0.25); }
+
 /* ==========================================================================
    Hero
    ========================================================================== */
